@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--Lista Ítems Pedidos-->
+  <CustomAction Id="ECBSepararItem" Title="Separar ítem" Location="EditControlBlock"
+                RegistrationType="ContentType" RegistrationId="0x0100A78D60D370B3DD4C977BBFF473649102"
+                ImageUrl="/_layouts/images/CASCADEDELETEPARENT.GIF" Rights="AddListItems">
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AbastecimientoCustomActions/SepararItem.aspx?ItemId={ItemId}&amp;ListId={ListId}', RefreshOnDialogClose, 500, 120,'Separar ítem')" />
+  </CustomAction>
+  <!--Lista Órdenes de Compra Internas-->
+  <CustomAction Id="ECBActualizarTotalOCI" Title="Actualizar total" Location="EditControlBlock"
+                RegistrationType="ContentType" RegistrationId="0x01004902C9C62A8AC74BA8EEAC49023E3828"
+                ImageUrl="/_layouts/images/TOTALROW.GIF" Rights="EditListItems">
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AbastecimientoCustomActions/ActualizarTotal.aspx?ItemId={ItemId}&amp;ListId={ListId}', RefreshOnDialogClose, 500, 120,'Actualizar total')" />
+  </CustomAction>
+  <!--Lista Órdenes de Compra Locales-->
+  <CustomAction Id="ECBActualizarTotalOCL" Title="Actualizar total" Location="EditControlBlock"
+                RegistrationType="ContentType" RegistrationId="0x01004902C9C62A8AC74BA8EEAC49023E382801"
+                ImageUrl="/_layouts/images/TOTALROW.GIF" Rights="EditListItems">
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AbastecimientoCustomActions/ActualizarTotal.aspx?ItemId={ItemId}&amp;ListId={ListId}', RefreshOnDialogClose, 500, 120,'Actualizar total')" />
+  </CustomAction>
+  <!--Lista Facturas-->
+  <CustomAction Id="ECBActualizarTotalFactura" Title="Actualizar total" Location="EditControlBlock"
+                RegistrationType="ContentType" RegistrationId="0x01005C1C45891B018548853BCA3E5D6BF37A"
+                ImageUrl="/_layouts/images/TOTALROW.GIF" Rights="EditListItems">
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AbastecimientoCustomActions/ActualizarTotal.aspx?ItemId={ItemId}&amp;ListId={ListId}', RefreshOnDialogClose, 500, 120,'Actualizar total')" />
+  </CustomAction>
+  <!--Lista Almacén-->
+  <CustomAction Id="ECBActualizarTotalAlmacen" Title="Actualizar total" Location="EditControlBlock"
+                RegistrationType="ContentType" RegistrationId="0x01001804164C7109124882A1D04F34243721"
+                ImageUrl="/_layouts/images/TOTALROW.GIF" Rights="EditListItems">
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AbastecimientoCustomActions/ActualizarTotal.aspx?ItemId={ItemId}&amp;ListId={ListId}', RefreshOnDialogClose, 500, 120,'Actualizar total')" />
+  </CustomAction>
+  <!--Lista Envío-->
+  <CustomAction Id="ECBRedistribuirCostos" Title="Redistribuir costos" Location="EditControlBlock"
+                RegistrationType="ContentType" RegistrationId="0x0100DB544E670A5E854CAA566297B84108C5"
+                ImageUrl="/_layouts/images/configcolumns.png" Rights="EditListItems">
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AbastecimientoCustomActions/RedistribuirCostos.aspx?ItemId={ItemId}&amp;ListId={ListId}', RefreshOnDialogClose, 500, 120,'Redistribuir costos')" />
+  </CustomAction>
+</Elements>

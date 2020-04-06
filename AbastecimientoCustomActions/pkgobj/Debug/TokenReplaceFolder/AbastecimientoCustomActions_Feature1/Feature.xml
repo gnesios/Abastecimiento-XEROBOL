@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Muestra el formulario para separar el ítem pedido sobre el cual es llamada esta operación." Id="5daee448-d538-4d54-8698-383ab29ffe64" Scope="Web" Title="Abastecimiento - ECB Separar Item">
+  <ElementManifests>
+    <ElementManifest Location="CASepararItemPedido\Elements.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7a038327-1740-4fc5-8202-df443fcc6491" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="AbastecimientoCustomActions.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\AbastecimientoCustomActions\ActualizarTotal.aspx" />
+    <TemplateFile Location="Layouts\AbastecimientoCustomActions\RedistribuirCostos.aspx" />
+    <TemplateFile Location="Layouts\AbastecimientoCustomActions\SepararItem.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="AbastecimientoCustomActions_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

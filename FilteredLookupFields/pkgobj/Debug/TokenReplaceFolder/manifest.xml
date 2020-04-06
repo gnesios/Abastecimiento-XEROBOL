@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2a99ce66-70da-4884-91c6-813fb14e1b8b" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="FilteredLookupFields.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\FilteredLookupField.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\FilteredLookupFieldEditor.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\FilteredLookupMultiField.ascx" />
+    <TemplateFile Location="XML\fldtypes_FilteredLookupField.xml" />
+  </TemplateFiles>
+</Solution>
