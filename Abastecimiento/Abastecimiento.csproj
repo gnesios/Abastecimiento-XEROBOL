@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D95D22D-5DA2-4C36-B041-67C1446DE725}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Abastecimiento</RootNamespace>
+    <AssemblyName>Abastecimiento</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DisabledItemEventsScope.cs" />
+    <Compile Include="EjecutorOperacionesSP.cs" />
+    <Compile Include="EREventosListas\EREventosListas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFNotificarAprobacion\WFNotificarAprobacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WFNotificarAprobacion\WFNotificarAprobacion.Designer.cs">
+      <DependentUpon>WFNotificarAprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFNotificarDescuentos\WFNotificarDescuentos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WFNotificarDescuentos\WFNotificarDescuentos.Designer.cs">
+      <DependentUpon>WFNotificarDescuentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPItemsPedidosConsolidados\WPItemsPedidosConsolidados.cs" />
+    <Compile Include="WPItemsPedidosConsolidados\WPItemsPedidosConsolidadosUserControl.ascx.cs">
+      <DependentUpon>WPItemsPedidosConsolidadosUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPItemsPedidosConsolidados\WPItemsPedidosConsolidadosUserControl.ascx.designer.cs">
+      <DependentUpon>WPItemsPedidosConsolidadosUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPNuevaOC\WPNuevaOC.cs" />
+    <Compile Include="WPNuevaOC\WPNuevaOCUserControl.ascx.cs">
+      <DependentUpon>WPNuevaOCUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPNuevaOC\WPNuevaOCUserControl.ascx.designer.cs">
+      <DependentUpon>WPNuevaOCUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EREventosListas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5518e4f7-f057-4b21-8a2f-69f1c2060ce6}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AbastecimientoFeature\AbastecimientoFeature.feature">
+      <FeatureId>{4cd39460-c515-4a9e-a3a5-c85aa27c36d8}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{c3d73179-d9b7-48c4-b269-34e7b1875d42}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WFNotificarAprobacion\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{700b490c-c721-4716-9854-e8d3db366663}</SharePointProjectItemId>
+    </None>
+    <None Include="WFNotificarDescuentos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f371b7df-6c87-4def-bd1c-074d00869fe1}</SharePointProjectItemId>
+    </None>
+    <None Include="WPItemsPedidosConsolidados\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3a7f925b-831f-4951-a2bf-c7b61e47d77d}</SharePointProjectItemId>
+    </None>
+    <None Include="WPItemsPedidosConsolidados\WPItemsPedidosConsolidados.webpart" />
+    <None Include="WPNuevaOC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43597c6e-a7fa-4bbd-86f7-aef3ff1659cc}</SharePointProjectItemId>
+    </None>
+    <None Include="WPNuevaOC\WPNuevaOC.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WFNotificarAprobacion\WFNotificarAprobacion.rules">
+      <DependentUpon>WFNotificarAprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFNotificarDescuentos\WFNotificarDescuentos.rules">
+      <DependentUpon>WFNotificarDescuentos.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EREventosListas\Elements.xml" />
+    <Content Include="Features\AbastecimientoFeature\AbastecimientoFeature.Template.xml">
+      <DependentUpon>AbastecimientoFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="WFNotificarAprobacion\Elements.xml" />
+    <Content Include="WFNotificarDescuentos\Elements.xml" />
+    <Content Include="WPItemsPedidosConsolidados\Elements.xml" />
+    <Content Include="WPItemsPedidosConsolidados\WPItemsPedidosConsolidadosUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WPNuevaOC\Elements.xml" />
+    <Content Include="WPNuevaOC\WPNuevaOCUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogEventos\LogEventos.csproj">
+      <Project>{72E0F362-A965-4971-B33B-53A1D8F5BC94}</Project>
+      <Name>LogEventos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

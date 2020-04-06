@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Características necesarias para el correcto funcionamiento del Sistema de Abastecimiento XEROBOL." Id="dce72f7e-c18c-4e16-a1cc-14f9fd439974" Scope="Site" Title="Abastecimiento XEROBOL">
+  <ElementManifests>
+    <ElementManifest Location="WPNuevaOC\Elements.xml" />
+    <ElementFile Location="WPNuevaOC\WPNuevaOC.webpart" />
+    <ElementManifest Location="EREventosListas\Elements.xml" />
+    <ElementManifest Location="WFNotificarDescuentos\Elements.xml" />
+    <ElementManifest Location="WFNotificarAprobacion\Elements.xml" />
+    <ElementManifest Location="WPItemsPedidosConsolidados\Elements.xml" />
+    <ElementFile Location="WPItemsPedidosConsolidados\WPItemsPedidosConsolidados.webpart" />
+  </ElementManifests>
+</Feature>

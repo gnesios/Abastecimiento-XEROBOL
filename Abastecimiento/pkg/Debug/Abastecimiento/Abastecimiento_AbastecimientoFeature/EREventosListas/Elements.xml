@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="100">
+      <Receiver>
+        <Name>EREventosListasItemAdding</Name>
+        <Type>ItemAdding</Type>
+        <Assembly>Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05</Assembly>
+        <Class>Abastecimiento.EREventosListas.EREventosListas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EREventosListasItemUpdating</Name>
+        <Type>ItemUpdating</Type>
+        <Assembly>Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05</Assembly>
+        <Class>Abastecimiento.EREventosListas.EREventosListas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EREventosListasItemDeleting</Name>
+        <Type>ItemDeleting</Type>
+        <Assembly>Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05</Assembly>
+        <Class>Abastecimiento.EREventosListas.EREventosListas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EREventosListasItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05</Assembly>
+        <Class>Abastecimiento.EREventosListas.EREventosListas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EREventosListasItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05</Assembly>
+        <Class>Abastecimiento.EREventosListas.EREventosListas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EREventosListasItemDeleted</Name>
+        <Type>ItemDeleted</Type>
+        <Assembly>Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05</Assembly>
+        <Class>Abastecimiento.EREventosListas.EREventosListas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+
+  </Receivers>
+</Elements>

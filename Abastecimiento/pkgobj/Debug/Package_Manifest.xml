@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c3d73179-d9b7-48c4-b269-34e7b1875d42" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="LogEventos.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Abastecimiento.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05" Namespace="Abastecimiento.WPNuevaOC" TypeName="*" />
+        <SafeControl Assembly="Abastecimiento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8edd06d77339fe05" Namespace="Abastecimiento.WPItemsPedidosConsolidados" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\Abastecimiento\WPNuevaOC\WPNuevaOCUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Abastecimiento\WPItemsPedidosConsolidados\WPItemsPedidosConsolidadosUserControl.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Abastecimiento_AbastecimientoFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Abastecimiento.WPItemsPedidosConsolidados.WPItemsPedidosConsolidados, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Reporte: Consolidado Ítems Pedidos</property>
+        <property name="Description" type="string">Información consolidada sobre ítems pedidos</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

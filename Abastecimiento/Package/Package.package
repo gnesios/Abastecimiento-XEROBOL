@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c3d73179-d9b7-48c4-b269-34e7b1875d42" solutionId="c3d73179-d9b7-48c4-b269-34e7b1875d42" resetWebServer="false" name="Abastecimiento" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="LogEventos.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\LogEventos\LogEventos.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="4cd39460-c515-4a9e-a3a5-c85aa27c36d8" />
+  </features>
+</package>
